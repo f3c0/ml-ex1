@@ -21,6 +21,10 @@ for iter = 1:num_iters
 
 
 
+    tmp = (theta' * X')' - y;
+    d = (tmp' * X)';
+    
+    theta = theta - (alpha / m) .* d;
 
 
 
